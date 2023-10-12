@@ -8,13 +8,9 @@
 </head>
 <body>
     <header>
-        <h1>AqGoEs</h1>
-        <div class="container-js">
-            <p class="mudanomecss" id="mudanome"><!--Paragrafo criado para a finção do js-->
-            </p>
-            <button class="botaojs" type="button" onclick="funcaomudanome()">Com o que você trabalha?</button>
+        <div class="container-header-texto">
+            <h1 class="titulo-principal">Olá, me chama Alan, sou estudante de programação web, estou testando minhas habildades em Js</h1>
         </div>
-        
     </header>
     
     <main>
@@ -78,13 +74,21 @@
                 </ul>
             </nav>
         </div>
-
-
-        <script>
-            function funcaomudanome(){
-                document.getElementById('mudanome').innerHTML = '<p>Com Desevolvimento Web. Full Stack </p>';
-            }
-        </script>
     </footer>
+    <script>
+      function typeWrite(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function(letra, i){   
+      
+    setTimeout(function(){
+        elemento.innerHTML += letra;
+    }, 75 * i)
+
+  });
+}
+const titulo = document.querySelector('.titulo-principal');
+typeWrite(titulo);
+    </script>
 </body>
 </html>
