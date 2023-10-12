@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --corbtm: #f0371a;
+    --corhover: #f7e6a6;
+    --corterciaria: #3e6b48;
+    --corquarciaria: #b5b479;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
@@ -12,7 +18,7 @@ header{
     padding: 38px;
     font-size: 40;
     text-align: center;
-    background-color: brown;
+    background-color: var(--corbtm);
     color: #fff;
   
 }
@@ -30,7 +36,7 @@ nav ul li a{
     color: #fff;
 }
 nav ul li a:hover{
-    color: aquamarine;
+    color: var(--corhover);
 }
 .leftcolumn{
     float: left;
@@ -61,6 +67,6 @@ nav ul li a:hover{
 footer{
     padding: 20px;
     text-align: center;
-    background-color: #ddd;
+    background-color: var(--corbtm);
     margin-top: 20px;
 }
