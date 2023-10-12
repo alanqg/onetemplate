@@ -9,6 +9,8 @@
 <body>
     <header>
         <h1>AqGoEs</h1>
+        <p id="mudanome"><!--Paragrafo criado para a finção do js--></p>
+        <button type="button" onclick="funcaomudanome()">Com o que você trabalha?</button>
     </header>
     
     <main>
@@ -72,6 +74,13 @@
                 </ul>
             </nav>
         </div>
+
+
+        <script>
+            function funcaomudanome(){
+                document.getElementById('mudanome').innerHTML = '<p>Com Desevolvimento Web. Full Stack </p>';
+            }
+        </script>
     </footer>
 </body>
 </html>
